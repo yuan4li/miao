@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .a {
+            background-color: black;
+            margin-bottom: 30px;
+
+        }
+
+        .a div {
+            background-color: black;
+            color: white;
+            width: 600px;
+            margin: auto;
+        }
+
+        .b {
+            background-color: black;
+            width: 600px;
+            padding: 0 calc(50% - 300px);
+            color: white;
+        }
+
+        p {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        ul.cards {
+            list-style: none;
+            width: 600px;
+            margin: auto;
+            padding: 0;
+
+        }
+
+        ul.cards li {
+            width: 180px;
+            height: 40;
+            box-sizing: border-box;
+            border: 3px solid;
+            margin-bottom: 15px;
+            text-align: center;
+            line-height: 34px;
+        }
+
+        ul.cards li:nth-child(n+5) {
+            margin-left: 220px;
+        }
+
+        ul.cards li:nth-child(n+9) {
+            margin-left: 440px;
+        }
+
+        ul.cards li:nth-child(4n+5) {
+            margin-top: -220px;
+        }
+
+        ul.links {
+            width: 600px;
+            list-style: none;
+            padding: 0;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        ul.links li {
+            border-bottom: 1px dotted;
+            padding-top: 1px;
+            margin-bottom: -1px;
+            magin-top: -1px;
+        }
+
+        .c {
+            width: 600px;
+            background-color: blueviolet;
+            padding: 0 calc(50% - 300px);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="a">
+        <div>hello word 请调整浏览器窗口大小查看效果</div>
+    </header>
+
+    <header class="b"> hello word 请调整浏览器窗口大小查看效果</header>
+
+    <p> 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+        宽度600px
+        页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体
+        宽度600px</p>
+
+    <ul class="cards">
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+        <li>产品</li>
+    </ul>
+
+    <ul class="links">
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+        <li>link</li>
+    </ul>
+
+    <header class="c">©版权所有
+        本页所有布局均使用块元素</header>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

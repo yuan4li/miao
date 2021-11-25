@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        thead th {
+            text-align: left;
+            border-bottom: 2px black solid;
+        }
+
+        tr {
+            border-bottom: 0.1px gray solid;
+        }
+
+        th,
+        td {
+            padding: 0.5em;
+        }
+
+        .table-striped tbody tr:nth-child(2n+1) {
+            background-color: #f2f2f2;
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: cadetblue;
+        }
+
+        .table-bordered th,
+        td {
+            border: 1px solid black;
+        }
+
+        .table-borderless thead,
+        tr {
+            border: none;
+        }
+
+        .table-dark {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table xtable-striped table-hover xtable-bordered table-borderless table-dark">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

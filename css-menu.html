@@ -5,86 +5,72 @@
     <meta charset="UTF=8">
     <title>Menu</title>
     <style>
-        header {
-            height: 30px;
-            background-color: gray;
+        ul{
+            list-style: none;
+            padding:0;
+            margin:0;  
+        }
+        .main-menu li:hover {
+            background-color:cornflowerblue;
+
+        }
+        .main-menu li {
+            white-space:nowrap;
             position: relative;
 
         }
-
-        div:hover>ul {
-            height: 16px;
-            width: 38px;
+       .main-menu > li{
+           display:inline-block;
+       }
+       .main-menu ul{
+           display: none;
+           position: absolute;
+       }
+       li:hover > ul{
+            display: block;
+        }
+        ul ul ul {
             position: absolute;
-            visibility: visible;
+            left:100%;
+            top:0;
 
+        } 
 
-        }
-
-        div {
-            border: black 1px solid;
-            display: inline-block;
-        }
-
-        ul {
-            visibility: hidden;
-            position: absolute;
-            background-color: gray;
-            position: fixed;
-            top: 7px;
-            xleft: 0;
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            border: blue 1px solid;
-        }
+        
     </style>
 </head>
 
 <body>
-    <header>
-        <div>aa
+    <ul class="main-menu">
+        <li>文件
             <ul>
-                <li>11</li>
-                <li>22</li>
-                <li>33</li>
-                <li>44</li>
-                <li>55</li>
-                <li>66</li>
-
+            <li>aaaaaaaaaaaaaaaaaaaaaa</li>
+            <li>bbb
+                <ul>
+                    <li>111</li>
+                    <li>222</li>
+                    <li>333</li>
+                    <li>444</li>
+                </ul>
+            </li>
+            <li>ccc</li>
             </ul>
-        </div>
-        <div>bb
+            </li>
+            <li>文件
             <ul>
-                <li>11</li>
-                <li>22</li>
-                <li>33</li>
-                <li>44</li>
-                <li>55</li>
-                <li>66</li>
-
+                <li>eee</li>
+                <li>fff</li>
+                <li>ggg</li>
             </ul>
-        </div>
-        <div>cc
+        </li>
+        <li>文件
             <ul>
-                <li>11</li>
-                <li>22</li>
-                <li>33</li>
-                <li>44</li>
-                <li>55</li>
-                <li>66</li>
-
+                <li>rrr</li>
+                <li>wwww</li>
+                <li>uuu</li>
             </ul>
-        </div>
-
-
-
-
-
-    </header>
-
+        </li>
+    </ul>
 
 </body>
 

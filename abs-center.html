@@ -111,11 +111,26 @@
 
         .e {
             height: 200px;
-            width: 100%;
-            background-image: url(bbb.png);
+            width: 200px;
+            background: url(bbb.png) no-repeat center;
             background-size: contain;
-            background-repeat: no-repeat;
         }
+
+        .f {
+            display:flex;
+            height: 200px;
+            width: 200px;
+            justify-content: center;
+            align-items:center ;
+            border: 1px black solid;
+        }
+        .f img{
+            xmargin: auto;
+            max-width: 100%;
+            max-height: 100%;
+            flex-shrink: 1;
+        }
+
     </style>
 
 </head>
@@ -142,7 +157,12 @@
     背景图片居中
     <div class="e">
     </div>
-
+    flex 居中
+    <!-- <section> -->
+    <div class="f">
+        <img src="23e6fc57709d070f69879b72948dda1e.gif" alt="">
+    </div>
+    <!-- </section> -->
 
 
 

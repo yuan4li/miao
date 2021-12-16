@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 600px
+        }
+
+        section {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transition: 13s;
+            transform-style: preserve-3d;
+
+        }
+
+        section:hover {
+            transform: rotatex(360deg) rotatey(360deg);
+
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        div:nth-child(1) {
+            transform: rotatey(90deg) translatez(50px);
+        }
+
+        div:nth-child(2) {
+            transform: rotatey(-90deg) translatez(50px);
+        }
+
+        div:nth-child(3) {
+            transform: rotatex(90deg) translatez(50px);
+        }
+
+        div:nth-child(4) {
+            transform: rotatex(-90deg) translatez(50px);
+        }
+
+        div:nth-child(5) {
+            transform: rotatex(180deg) translatez(50px);
+        }
+
+        div:nth-child(6) {
+            transform: rotatez(0deg) translatez(50px);
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </section>
+
+</body>
+
+</html>

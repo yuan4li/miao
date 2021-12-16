@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            height: 20px;
+            width: 20px;
+            margin: auto;
+            background-color: aqua;
+            border: 5px solid black;
+            transition: 2s;
+            xtransform: translate(30px, 50px);
+            position: relative;
+
+
+        }
+
+        img {
+            display: inline block;
+            position: absolute;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        body:hover div {
+            transition: 1s;
+            transform: translate(0px, 10px) rotate(10deg) translate(0px, 30px) translate(-30px, 0px);
+
+            transform-origin: top center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <img src="face.jpeg" alt="">
+    </div>
+
+</body>
+
+</html>

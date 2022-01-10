@@ -51,14 +51,67 @@ function fibb(n){
 
  </script>
  <script>
-   function countBs(str){
-     var count = 0
-     for(var i = 0; i <=str.length; i++){
-       if (str(i) == 'B')
-       count++
-     }return count
+
+
+function radomAry(n){
+  let ary = []
+  for(let i = 0;i < n; i++){
+    ary.push( Math.random() * n | 0)
+
+  }
+  return ary
+}
+   function insertSort(ary){
+     for(let i = 1; i < ary.length; i++){
+       let t = ary[i]
+       for(let j = i - 1; j >= 0; j--){
+         if(ary[j] > t){
+           ary[j + 1] = ary [j]
+         }else{
+           ary[j + 1] = t
+           break
+         }
+         
+       }
+
+     }
+       return ary
    }
+
+
+  function stringify(value){
+    if(Array.isArray(value)){
+      let a = '['
+      for (i = 1;i < .length; i++)
+    }
+  }
+
+  function reduce(ary, reducer,initial){
+    for (let i = o, i < ary.length; i++){
+      initial = reducer(initial,ary[i])
+    }
+    return initial
+
+  }
+   
+   reducer([1,2,3,4,5],(sum,current) => {return sum + current}, 0)
+   reducer([1,2,3,4,5], (max,current ) => max > current ? max : current. -Infinity)
+   reducer()
+
+
+   
+
+  
+
+
+
+
+
+
+
  </script>
+
+
 
 
 

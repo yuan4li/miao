@@ -6,7 +6,7 @@ var yuan4li = {
     let result = []
 
     for (i = 0; i < n; i++){
-      temp.push = array[i]
+      temp.push( array[i])
       if (temp.length == size) {
         result.push(temp)
         temp = []
@@ -40,6 +40,6 @@ var yuan4li = {
 
 
 
-  
+
 }
  

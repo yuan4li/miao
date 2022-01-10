@@ -18,6 +18,17 @@ var yuan4li = {
     return result
   },
 
+  compact: function (array) {
+    let result = []
+    let n = array.length
+    for (let i = 0; i < n; i++){
+      if (array[i]) {
+        result.push(array[i])
+      }
+    }
+    return result
+  },
+
 
 
 

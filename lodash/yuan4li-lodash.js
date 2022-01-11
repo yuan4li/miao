@@ -1,4 +1,10 @@
 var yuan4li = {
+  /**
+   * 
+   * @param {*} array 
+   * @param {*} size 
+   * @returns 
+   */
   chunk: (array, size) => {
     let n = array.length
     if (n <= size) { return [array] }
@@ -28,6 +34,45 @@ var yuan4li = {
     }
     return result
   },
+
+  concat: function (array, values) {
+    let result = [],
+      n = array.length,
+        v = values
+    
+    for (let i = 0; i < n; i++){
+      result.push(array[i])
+    }
+
+    
+  },
+  
+  drop: function (array, n = 1) {
+    let a = []
+    for (let i = n; i < array.length; i++){
+      a.push(array[i])
+    }
+    return a
+  },
+
+  dropright: function (array, n = 1) {
+    let a = []
+    for (let i = 0; i < array.length - n; i++){
+      a.push(array[i])
+    }
+    return a
+  },
+
+  fill: function (array, value, start = 0, end = array.length) {
+    for (let i = start; i < end; i++){
+      array[i] = value
+    }
+    return array     
+  }
+    
+
+
+
 
 
 

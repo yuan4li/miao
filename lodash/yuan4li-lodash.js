@@ -55,7 +55,7 @@ var yuan4li = {
     return a
   },
 
-  dropright: function (array, n = 1) {
+  dropRight: function (array, n = 1) {
     let a = []
     for (let i = 0; i < array.length - n; i++){
       a.push(array[i])
@@ -68,7 +68,40 @@ var yuan4li = {
       array[i] = value
     }
     return array     
-  }
+  },
+
+  flatten: function (array) {
+    let a = []
+    for (let i = 0; i < array.length; i++){
+      if (Array.isArray(array(i))) {
+        for (let j = 0; j < array[i].length; j++){
+          a.push(array[i][j])
+        }
+      } else {
+        a.push(array[i])
+      }
+    }
+    return a
+  },
+
+  flattenDeep: function (array) {
+    let result = []
+    for (let i = 0; i < array.length; i++) {
+      if (Array.isArray(array[i]))
+        flattenDeep(array[i]).forEach(element => result.push(element))
+      else
+        result.push(i)
+    }
+  return result
+  },
+  
+  
+
+
+  
+
+
+
     
 
 
